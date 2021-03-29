@@ -33,5 +33,16 @@ namespace app_School.Properties {
                 return ((string)(this["SChoolConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LAV\\MSSQLSERVER01;Initial Catalog=Demo_apr;Integrated Securit" +
+            "y=True")]
+        public string Demo_aprConnectionString {
+            get {
+                return ((string)(this["Demo_aprConnectionString"]));
+            }
+        }
     }
 }
