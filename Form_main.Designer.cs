@@ -1,7 +1,7 @@
 ﻿
 namespace app_School
 {
-    partial class Form1
+    partial class Form_main
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -36,7 +36,7 @@ namespace app_School
             System.Windows.Forms.Label patronymicLabel;
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label emailLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.buttonOpenRedactor = new System.Windows.Forms.Button();
             this.sChoolDataSet = new app_School.SChoolDataSet();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -84,7 +84,7 @@ namespace app_School
             genderCodeLabel.AutoSize = true;
             genderCodeLabel.Location = new System.Drawing.Point(14, 71);
             genderCodeLabel.Name = "genderCodeLabel";
-            genderCodeLabel.Size = new System.Drawing.Size(51, 24);
+            genderCodeLabel.Size = new System.Drawing.Size(43, 19);
             genderCodeLabel.TabIndex = 0;
             genderCodeLabel.Text = "Пол:";
             // 
@@ -93,7 +93,7 @@ namespace app_School
             lastNameLabel.AutoSize = true;
             lastNameLabel.Location = new System.Drawing.Point(319, 54);
             lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new System.Drawing.Size(89, 24);
+            lastNameLabel.Size = new System.Drawing.Size(73, 19);
             lastNameLabel.TabIndex = 2;
             lastNameLabel.Text = "Фамилия:";
             // 
@@ -102,7 +102,7 @@ namespace app_School
             firstNameLabel.AutoSize = true;
             firstNameLabel.Location = new System.Drawing.Point(320, 92);
             firstNameLabel.Name = "firstNameLabel";
-            firstNameLabel.Size = new System.Drawing.Size(49, 24);
+            firstNameLabel.Size = new System.Drawing.Size(40, 19);
             firstNameLabel.TabIndex = 4;
             firstNameLabel.Text = "Имя:";
             // 
@@ -111,7 +111,7 @@ namespace app_School
             patronymicLabel.AutoSize = true;
             patronymicLabel.Location = new System.Drawing.Point(596, 50);
             patronymicLabel.Name = "patronymicLabel";
-            patronymicLabel.Size = new System.Drawing.Size(92, 24);
+            patronymicLabel.Size = new System.Drawing.Size(75, 19);
             patronymicLabel.TabIndex = 6;
             patronymicLabel.Text = "Отчество:";
             // 
@@ -120,7 +120,7 @@ namespace app_School
             phoneLabel.AutoSize = true;
             phoneLabel.Location = new System.Drawing.Point(319, 138);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(156, 24);
+            phoneLabel.Size = new System.Drawing.Size(127, 19);
             phoneLabel.TabIndex = 8;
             phoneLabel.Text = "Номер телефона:";
             // 
@@ -129,7 +129,7 @@ namespace app_School
             emailLabel.AutoSize = true;
             emailLabel.Location = new System.Drawing.Point(596, 92);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(57, 24);
+            emailLabel.Size = new System.Drawing.Size(48, 19);
             emailLabel.TabIndex = 10;
             emailLabel.Text = "Email:";
             // 
@@ -143,7 +143,7 @@ namespace app_School
             this.buttonOpenRedactor.Location = new System.Drawing.Point(1008, 378);
             this.buttonOpenRedactor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOpenRedactor.Name = "buttonOpenRedactor";
-            this.buttonOpenRedactor.Size = new System.Drawing.Size(164, 70);
+            this.buttonOpenRedactor.Size = new System.Drawing.Size(255, 45);
             this.buttonOpenRedactor.TabIndex = 1;
             this.buttonOpenRedactor.Text = "Добавление и  редактирование";
             this.buttonOpenRedactor.UseVisualStyleBackColor = true;
@@ -297,10 +297,10 @@ namespace app_School
             "50",
             "200",
             "Все"});
-            this.comboBoxLIMIT.Location = new System.Drawing.Point(921, 391);
+            this.comboBoxLIMIT.Location = new System.Drawing.Point(921, 378);
             this.comboBoxLIMIT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBoxLIMIT.Name = "comboBoxLIMIT";
-            this.comboBoxLIMIT.Size = new System.Drawing.Size(80, 32);
+            this.comboBoxLIMIT.Size = new System.Drawing.Size(80, 26);
             this.comboBoxLIMIT.TabIndex = 7;
             this.comboBoxLIMIT.Text = "Все";
             // 
@@ -310,7 +310,7 @@ namespace app_School
             this.label1.Location = new System.Drawing.Point(917, 350);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 24);
+            this.label1.Size = new System.Drawing.Size(209, 19);
             this.label1.TabIndex = 6;
             this.label1.Text = "Сколько записей показывать?";
             // 
@@ -320,7 +320,7 @@ namespace app_School
             this.label2.Location = new System.Drawing.Point(1086, 590);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 24);
+            this.label2.Size = new System.Drawing.Size(114, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "Число записей:";
             // 
@@ -330,7 +330,7 @@ namespace app_School
             this.label_count.Location = new System.Drawing.Point(1233, 590);
             this.label_count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_count.Name = "label_count";
-            this.label_count.Size = new System.Drawing.Size(58, 24);
+            this.label_count.Size = new System.Drawing.Size(50, 19);
             this.label_count.TabIndex = 10;
             this.label_count.Text = "0 из 0";
             // 
@@ -375,7 +375,7 @@ namespace app_School
             this.genderCodeComboBox.Location = new System.Drawing.Point(67, 67);
             this.genderCodeComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.genderCodeComboBox.Name = "genderCodeComboBox";
-            this.genderCodeComboBox.Size = new System.Drawing.Size(182, 32);
+            this.genderCodeComboBox.Size = new System.Drawing.Size(182, 26);
             this.genderCodeComboBox.TabIndex = 14;
             this.genderCodeComboBox.Text = "Все";
             this.genderCodeComboBox.SelectedIndexChanged += new System.EventHandler(this.genderCodeComboBox_SelectedIndexChanged);
@@ -386,7 +386,7 @@ namespace app_School
             this.label5.Location = new System.Drawing.Point(14, 34);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 24);
+            this.label5.Size = new System.Drawing.Size(89, 19);
             this.label5.TabIndex = 13;
             this.label5.Text = "Фильтрация";
             // 
@@ -396,7 +396,7 @@ namespace app_School
             this.label4.Location = new System.Drawing.Point(319, 20);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 24);
+            this.label4.Size = new System.Drawing.Size(57, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Поиск:";
             // 
@@ -406,7 +406,7 @@ namespace app_School
             this.emailTextBox.Location = new System.Drawing.Point(698, 89);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(169, 31);
+            this.emailTextBox.Size = new System.Drawing.Size(169, 26);
             this.emailTextBox.TabIndex = 11;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
@@ -416,7 +416,7 @@ namespace app_School
             this.phoneTextBox.Location = new System.Drawing.Point(485, 134);
             this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(169, 31);
+            this.phoneTextBox.Size = new System.Drawing.Size(169, 26);
             this.phoneTextBox.TabIndex = 9;
             this.phoneTextBox.TextChanged += new System.EventHandler(this.phoneTextBox_TextChanged);
             // 
@@ -426,7 +426,7 @@ namespace app_School
             this.patronymicTextBox.Location = new System.Drawing.Point(700, 47);
             this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.patronymicTextBox.Name = "patronymicTextBox";
-            this.patronymicTextBox.Size = new System.Drawing.Size(167, 31);
+            this.patronymicTextBox.Size = new System.Drawing.Size(167, 26);
             this.patronymicTextBox.TabIndex = 7;
             this.patronymicTextBox.TextChanged += new System.EventHandler(this.patronymicTextBox_TextChanged);
             // 
@@ -436,7 +436,7 @@ namespace app_School
             this.firstNameTextBox.Location = new System.Drawing.Point(423, 89);
             this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(167, 31);
+            this.firstNameTextBox.Size = new System.Drawing.Size(167, 26);
             this.firstNameTextBox.TabIndex = 5;
             this.firstNameTextBox.TextChanged += new System.EventHandler(this.firstNameTextBox_TextChanged);
             // 
@@ -446,23 +446,23 @@ namespace app_School
             this.lastNameTextBox.Location = new System.Drawing.Point(423, 50);
             this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(167, 31);
+            this.lastNameTextBox.Size = new System.Drawing.Size(167, 26);
             this.lastNameTextBox.TabIndex = 3;
             this.lastNameTextBox.TextChanged += new System.EventHandler(this.lastNameTextBox_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(933, 512);
+            this.label3.Location = new System.Drawing.Point(928, 428);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(291, 24);
+            this.label3.Size = new System.Drawing.Size(236, 19);
             this.label3.TabIndex = 12;
             this.label3.Text = "В этом месяце день рождениие у:";
             // 
-            // Form1
+            // Form_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1312, 629);
@@ -477,7 +477,7 @@ namespace app_School
             this.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "Form_main";
             this.Text = "School";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sChoolDataSet)).EndInit();

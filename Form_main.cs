@@ -12,10 +12,10 @@ using System.Data.SqlClient;
 
 namespace app_School
 {
-    public partial class Form1 : Form
+    public partial class Form_main : Form
     {
         SqlConnection connection = new SqlConnection($@"Data Source=DESKTOP-KVTPRR0\MSSQLSERVER01;Initial Catalog=SChool;Integrated Security=True");
-        public Form1()
+        public Form_main()
         {
             InitializeComponent();
         }
