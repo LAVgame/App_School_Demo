@@ -7,7 +7,7 @@ namespace app_School
 {
     public partial class Form_main : Form
     {
-        SqlConnection connection = new SqlConnection($@"Data Source=DESKTOP-KVTPRR0\MSSQLSERVER01;Initial Catalog=SChool;Integrated Security=True");
+        SqlConnection connection = new SqlConnection($@"Data Source=DESKTOP-LAV\MSSQLSERVER01;Initial Catalog=Demo_apr;Integrated Security=True");
         public Form_main()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace app_School
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "demo_aprDataSet.Client". При необходимости она может быть перемещена или удалена.
-            this.clientTableAdapter.Fill(this.demo_aprDataSet.Client);
+            //this.clientTableAdapter.Fill(this.demo_aprDataSet.Client);
             //// TODO: данная строка кода позволяет загрузить данные в таблицу "sChoolDataSet.Client". При необходимости она может быть перемещена или удалена.
             //this.clientTableAdapter.Fill(this.sChoolDataSet.Client);
 
@@ -50,13 +50,14 @@ namespace app_School
                     textCount = "ж";
                     break;
                 default:
+                    textCount = " ";
                     break;
             }
             string LIMIT = "";
             switch (comboBoxLIMIT.Text)
             {
                 case "Все":
-                    LIMIT = "1000";
+                    LIMIT = "50";
                     break;
                 case "50":
                     LIMIT = "50";
@@ -68,52 +69,52 @@ namespace app_School
                     LIMIT = "10";
                     break;
                 default:
+                    LIMIT = "50";
                     break;
             }
-            query += $@" Where GenderCode = '{textCount}', ";
+            query += $@" Where GenderCode = '{textCount}' ";
 
             // IF
             if (lastNameTextBox.Text != "")
             {
-                query += " AND LastName Like '%{lastNameTextBox.Text}%' ";
+                query += $@" AND LastName Like '%{lastNameTextBox.Text}%' ";
             }
             if (firstNameTextBox.Text != "")
             {
-                query += "AND  FirstName  Like '%{firstNameTextBox.Text}%' ";
+                query += $@"AND  FirstName  Like '%{firstNameTextBox.Text}%' ";
             }
             if (patronymicTextBox.Text != "")
             {
-                query += "AND Patronymic Like '%{patronymicTextBox.Text}%'";
+                query += $@"AND Patronymic Like '%{patronymicTextBox.Text}%' ";
             }
             if (emailTextBox.Text != "")
             {
-                query += "AND  Email Like '%{emailTextBox.Text}%'";
+                query += $@"AND  Email Like '%{emailTextBox.Text}%' ";
             }
             if (phoneTextBox.Text != "")
             {
-                query += "AND Phone Like '%{phoneTextBox.Text}%' ";
+                query += $@"AND Phone Like '%{phoneTextBox.Text}%' ";
             }
-            query += $@"AND Limit {LIMIT}";
+           // query += $@" LIMIT {LIMIT} ";
 
             MessageBox.Show(query, "Запрос");
+
             //Update Grid
             /* string query = $@" Select * From Client Where  GenderCode = '{textCount}' and
             LastName Like '%{lastNameTextBox.Text}%' and  FirstName  Like '%{firstNameTextBox.Text}%' 
             and Patronymic Like '%{patronymicTextBox.Text}%' and  Email Like '%{emailTextBox.Text}%' 
             and Phone Like '%{phoneTextBox.Text}%' "; //LIMIT {LIMIT} */
+
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(query, connection);
             da.Fill(ds, "Client");
             clientDataGridView.DataSource = ds.Tables["Client"];
             connection.Close();
+
+            label_birthday.Text = "";
         }
 
-        private void genderCodeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-
-
-        }
 
         //private void UpdateGrid()
         //{   
@@ -185,41 +186,28 @@ namespace app_School
         //    }
         //}
 
-        private void lastNameTextBox_TextChanged(object sender, EventArgs e)
-        {
+ 
 
-        }
-        private void patronymicTextBox_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-        private void firstNameTextBox_TextChanged(object sender, EventArgs e)
+        private void firstNameTextBox_TextChanged_1(object sender, EventArgs e)
         {
-
+            UPgrid();
         }
-        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        private void phoneTextBox_TextChanged_1(object sender, EventArgs e)
         {
-
+            UPgrid();
         }
-        private void phoneTextBox_TextChanged(object sender, EventArgs e)
+        private void lastNameTextBox_TextChanged_1(object sender, EventArgs e)
         {
-
+            UPgrid();
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void patronymicTextBox_TextChanged_1(object sender, EventArgs e)
         {
-            clientDataGridView.DataSource = null;
+            UPgrid();
         }
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void emailTextBox_TextChanged_1(object sender, EventArgs e)
         {
-
-        }
-        private void clientDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        private void buttonOpenRedactor_Click(object sender, EventArgs e)
-        {
-
+            UPgrid();
         }
     }
 }
