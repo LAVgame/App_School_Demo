@@ -100,7 +100,7 @@ namespace app_School
             // firstNameLabel
             // 
             firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new System.Drawing.Point(320, 92);
+            firstNameLabel.Location = new System.Drawing.Point(320, 87);
             firstNameLabel.Name = "firstNameLabel";
             firstNameLabel.Size = new System.Drawing.Size(40, 19);
             firstNameLabel.TabIndex = 4;
@@ -109,7 +109,7 @@ namespace app_School
             // patronymicLabel
             // 
             patronymicLabel.AutoSize = true;
-            patronymicLabel.Location = new System.Drawing.Point(596, 50);
+            patronymicLabel.Location = new System.Drawing.Point(319, 121);
             patronymicLabel.Name = "patronymicLabel";
             patronymicLabel.Size = new System.Drawing.Size(75, 19);
             patronymicLabel.TabIndex = 6;
@@ -118,7 +118,7 @@ namespace app_School
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(319, 138);
+            phoneLabel.Location = new System.Drawing.Point(319, 191);
             phoneLabel.Name = "phoneLabel";
             phoneLabel.Size = new System.Drawing.Size(127, 19);
             phoneLabel.TabIndex = 8;
@@ -127,7 +127,7 @@ namespace app_School
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(596, 92);
+            emailLabel.Location = new System.Drawing.Point(319, 155);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(48, 19);
             emailLabel.TabIndex = 10;
@@ -140,7 +140,7 @@ namespace app_School
             this.buttonOpenRedactor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.buttonOpenRedactor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOpenRedactor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOpenRedactor.Location = new System.Drawing.Point(1008, 378);
+            this.buttonOpenRedactor.Location = new System.Drawing.Point(1008, 374);
             this.buttonOpenRedactor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOpenRedactor.Name = "buttonOpenRedactor";
             this.buttonOpenRedactor.Size = new System.Drawing.Size(255, 45);
@@ -375,7 +375,7 @@ namespace app_School
             this.genderCodeComboBox.Location = new System.Drawing.Point(67, 67);
             this.genderCodeComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.genderCodeComboBox.Name = "genderCodeComboBox";
-            this.genderCodeComboBox.Size = new System.Drawing.Size(182, 26);
+            this.genderCodeComboBox.Size = new System.Drawing.Size(142, 26);
             this.genderCodeComboBox.TabIndex = 14;
             this.genderCodeComboBox.Text = "Все";
             this.genderCodeComboBox.SelectedIndexChanged += new System.EventHandler(this.genderCodeComboBox_SelectedIndexChanged);
@@ -403,27 +403,27 @@ namespace app_School
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(698, 89);
+            this.emailTextBox.Location = new System.Drawing.Point(423, 152);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(169, 26);
+            this.emailTextBox.Size = new System.Drawing.Size(167, 26);
             this.emailTextBox.TabIndex = 11;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(485, 134);
+            this.phoneTextBox.Location = new System.Drawing.Point(324, 214);
             this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(169, 26);
+            this.phoneTextBox.Size = new System.Drawing.Size(266, 26);
             this.phoneTextBox.TabIndex = 9;
             this.phoneTextBox.TextChanged += new System.EventHandler(this.phoneTextBox_TextChanged);
             // 
             // patronymicTextBox
             // 
             this.patronymicTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientBindingSource, "Patronymic", true));
-            this.patronymicTextBox.Location = new System.Drawing.Point(700, 47);
+            this.patronymicTextBox.Location = new System.Drawing.Point(423, 118);
             this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.patronymicTextBox.Name = "patronymicTextBox";
             this.patronymicTextBox.Size = new System.Drawing.Size(167, 26);
@@ -433,7 +433,7 @@ namespace app_School
             // firstNameTextBox
             // 
             this.firstNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientBindingSource, "FirstName", true));
-            this.firstNameTextBox.Location = new System.Drawing.Point(423, 89);
+            this.firstNameTextBox.Location = new System.Drawing.Point(423, 84);
             this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(167, 26);
